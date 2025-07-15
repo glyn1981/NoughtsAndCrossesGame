@@ -1,0 +1,22 @@
+# Top-level config
+root = true
+
+[*.cs]  # Apply to all C# files
+
+# Indentation and spacing
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+
+# Naming rules
+dotnet_naming_rule.local_variables_should_be_camel_case.severity = error
+dotnet_naming_rule.local_variables_should_be_camel_case.symbols = local_variables
+dotnet_naming_rule.local_variables_should_be_camel_case.style = camel_case_style
+
+dotnet_naming_symbols.local_variables.applicable_kinds = local
+dotnet_naming_symbols.local_variables.applicable_accessibilities = *
+dotnet_naming_symbols.local_variables.required_modifiers = *
+
+dotnet_naming_style.camel_case_style.capitalization = camel_case
+dotnet_naming_style.camel_case_style.required_prefix = 
+dotnet_naming_style.camel_case_style.required_suffix = 
