@@ -1,11 +1,11 @@
-# NoughtsAndCrosses (Tic Tac Toe)
+# Noughts And Crosses (OXO)
 
 A modular, test-driven, and extensible Tic Tac Toe game written in C# (.NET 8), featuring AI opponent, score tracking, and a clean architecture following SOLID principles.
 
 ## Features
 
-- Play Tic Tac Toe against an AI opponent in the console.
-- AI blocks, wins, or picks the best available move.
+- Play Noughts and Crosses against an computer opponent in the console.
+- Computer blocks, wins, or picks the best available move.
 - Score tracking for user wins, AI wins, and draws.
 - Retry loop: play multiple games in a session.
 - Clean separation of concerns using interfaces and dependency injection.
