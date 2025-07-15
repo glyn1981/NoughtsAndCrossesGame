@@ -30,3 +30,33 @@ You will be prompted to play as "X" against the AI ("O"). After each game, you c
 ### Running Tests
 
 To run all unit and integration tests:
+
+## Project Structure
+
+- `NoughtsAndCrosses/` - Main game logic and classes
+- `NoughtsAndCrosses.Test/` - Unit tests for core components
+- `NoughtsAndCrosses.IntegrationTests/` - Integration tests for game sessions
+
+## Key Classes
+
+- `GameSession` - Manages game sessions, score tracking, and retry loop
+- `GameLogic` - Orchestrates a single game
+- `AiOpponent` - AI logic for the computer player
+- `PlayerTurnHandler` - Handles user input and move validation
+- `Grid` - Represents the game board
+- `GridRenderer` - Handles board display in the console
+- `TurnManager` - Manages player turns
+
+## Extending the Game
+
+- To add new AI strategies, implement `IAiOpponent`.
+- To support different UIs, implement `IInputOutput` and/or `IGridRenderer`.
+- To change win conditions or grid size, modify `WinningCombinations` and `Grid`.
+
+## License
+
+MIT
+
+---
+
+*Built with C# 12 and .NET 8. Contributions and suggestions welcome!*
